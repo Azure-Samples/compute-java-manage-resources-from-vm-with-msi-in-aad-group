@@ -1,57 +1,38 @@
-# Project Name
+---
+services: Compute
+platforms: java
+author: anuchandy
+---
 
-(short, 1-3 sentenced, description of the project)
-
-## Features
-
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
-
-## Getting Started
-
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+## Getting Started with Compute - Manage Storage From MSI Enabled Virtual Machine - in Java ##
 
 
-## Demo
+  Azure Compute sample for managing virtual machines -
+    - Create a virtual machine with Managed Service Identity enabled with access to resource group
+    - Set custom script in the virtual machine that
+           - install az cli in the virtual machine
+           - uses az cli MSI credentials to create a storage account
+    - Get storage account created through MSI credentials.
+ 
 
-A demo app is included to show how to use the project.
+## Running this Sample ##
 
-To run the demo, follow these steps:
+To run this sample:
 
-(Add steps to start up the demo)
+Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-sdk-for-java/blob/master/AUTH.md).
 
-1.
-2.
-3.
+    git clone https://github.com/Azure-Samples/compute-java-manage-resources-from-vm-with-msi-in-aad-group.git
 
-## Resources
+    cd compute-java-manage-resources-from-vm-with-msi-in-aad-group
 
-(Any additional resources or related projects)
+    mvn clean compile exec:java
 
-- Link to supporting information
-- Link to similar sample
-- ...
+## More information ##
+
+[http://azure.com/java](http://azure.com/java)
+
+If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
+
+---
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
