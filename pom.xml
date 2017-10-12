@@ -5,7 +5,7 @@
   <groupId>com.microsoft.azure</groupId>
   <artifactId>compute-java-manage-resources-from-vm-with-msi-in-aad-group</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>ManageStorageFromMSIEnabledVirtualMachine.java</name>
+  <name>ManageResourceFromMSIEnabledVirtualMachineBelongsToAADGroup.java</name>
   <description></description>
   <url>https://github.com/Azure/compute-java-manage-resources-from-vm-with-msi-in-aad-group</url>
   <build>
@@ -15,7 +15,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.4.0</version>
         <configuration>
-          <mainClass>com.microsoft.azure.management.compute.samples.ManageStorageFromMSIEnabledVirtualMachine</mainClass>
+          <mainClass>com.microsoft.azure.management.compute.samples.ManageResourceFromMSIEnabledVirtualMachineBelongsToAADGroup</mainClass>
         </configuration>
       </plugin>
       <plugin>
@@ -40,7 +40,7 @@
               </descriptorRefs>
               <archive>
                 <manifest>
-                  <mainClass>com.microsoft.azure.management.compute.samples.ManageStorageFromMSIEnabledVirtualMachine.java</mainClass>
+                  <mainClass>com.microsoft.azure.management.compute.samples.ManageResourceFromMSIEnabledVirtualMachineBelongsToAADGroup.java</mainClass>
                 </manifest>
               </archive>
             </configuration>

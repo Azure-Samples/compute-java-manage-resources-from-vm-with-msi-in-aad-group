@@ -4,11 +4,14 @@ platforms: java
 author: anuchandy
 ---
 
-## Getting Started with Compute - Manage Storage From MSI Enabled Virtual Machine - in Java ##
+## Getting Started with Compute - Manage Resource From MSI Enabled Virtual Machine Belongs To AAD Group - in Java ##
 
 
   Azure Compute sample for managing virtual machines -
-    - Create a virtual machine with Managed Service Identity enabled with access to resource group
+    - Create a AAD security group
+    - Assign AAD security group Contributor role at a resource group
+    - Create a virtual machine with MSI enabled
+    - Add virtual machine MSI service principal to the AAD group
     - Set custom script in the virtual machine that
            - install az cli in the virtual machine
            - uses az cli MSI credentials to create a storage account
