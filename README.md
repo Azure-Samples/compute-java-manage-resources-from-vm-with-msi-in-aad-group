@@ -4,12 +4,12 @@ languages:
 - java
 products:
 - azure
-services: Compute
-platforms: java
-author: yaohaizh
+extensions:
+- services: Compute
+- platforms: java
 ---
 
-## Getting Started with Compute - Manage Resource From MSI Enabled Virtual Machine Belongs To AAD Group - in Java ##
+# Getting Started with Compute - Manage Resource From MSI Enabled Virtual Machine Belongs To AAD Group - in Java #
 
 
   Azure Compute sample for managing virtual machines -
