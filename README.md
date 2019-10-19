@@ -4,11 +4,12 @@ languages:
 - java
 products:
 - azure
-description: "Azure Compute sample for managing virtual machines"
+- azure-virtual-machines
+description: "Azure Compute sample for managing virtual machines."
 urlFragment: compute-java-manage-resources-from-vm-with-msi-in-aad-group
 ---
 
-# Getting Started with Compute - Manage Resource From MSI Enabled Virtual Machine Belongs To AAD Group - in Java #
+# Manage Resources From MSI-Enabled Virtual Machine Belonging To AAD Group (Java)
 
 Azure Compute sample for managing virtual machines.
   
